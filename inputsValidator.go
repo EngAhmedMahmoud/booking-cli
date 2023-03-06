@@ -43,10 +43,7 @@ func readInputs(avaliableTickets uint64) (Participant,error){
 }
 
 func emptyInput(input string)bool{
-	if len(input) == 0{
-		return true;
-	}
-	return false;
+	return len(input) == 0
 }
 
 func validEMail(email string) bool{
